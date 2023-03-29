@@ -25,7 +25,7 @@ def hello_world():
 
 
     # Set up the OpenAI API client
-
+    openai.api_key = "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"
 
     # # Set up the model and prompt
     # model_engine = "text-davinci-003"
