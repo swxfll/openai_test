@@ -7,8 +7,6 @@ from flask_cors import cross_origin
 app = Flask(__name__)
 
 
-
-
 @app.route('/', methods=("POST", "GET"))
 @cross_origin()
 def hello_world():
@@ -23,9 +21,8 @@ def hello_world():
 
     print(problem)
 
-
     # Set up the OpenAI API client
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     # # Set up the model and prompt
     # model_engine = "text-davinci-003"
@@ -48,7 +45,7 @@ def hello_world():
 
     response = openai.Image.create(
         prompt=problem,
-        n=10,
+        n=1,
         size="1024x1024"
     )
     # image_url = response['data'][0]['url']
