@@ -22,7 +22,7 @@ def hello_world():
     print(problem)
 
     # Set up the OpenAI API client
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     # # Set up the model and prompt
     # model_engine = "text-davinci-003"
