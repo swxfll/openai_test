@@ -45,7 +45,7 @@ def hello_world():
 
     response = openai.Image.create(
         prompt=problem,
-        n=1,
+        n=2,
         size="1024x1024"
     )
     # image_url = response['data'][0]['url']
